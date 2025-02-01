@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title=title
+    link(rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    header
+      div
+        a(href='/')
+          img(src="", alt="logo")
+      div(class='header-search')
+        input(class='search-search_input', type='input', placeholder='Search')
+      div(class='header-auth_buttons')
+        a(class='button button--small--outline--rounded', href='/signin') Sign In
+        a(class='button button--small--rounded', href='/signup') Sign Up
+    block content

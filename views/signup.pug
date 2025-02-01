@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  main
+      div
+        input(type="input", placeholder="First Name (required)")
+        input(type="input", placeholder="Last Name (required)")
+        input(type="input", placeholder="Email (required)")
+        input(type="input", placeholder="Password (required)")
+        input(type="input", placeholder="Confirm Password (required)")
+        button(type="submit") Sign Up
+      div
+        a(href="/signin") Already have an account? Sign In
+
