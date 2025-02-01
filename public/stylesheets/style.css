@@ -1,0 +1,134 @@
+body {
+    padding: 20px 50px;
+    font-family: var(--font);
+    font-size: var(--text-size-primary);
+    font-weight: 300;
+    background: var(--bg-primary);
+    color: var(--color-primary);
+    text-rendering: optimizeLegibility;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: var(--text-size-large);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: var(--text-size-medium);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #00b7ff;
+    text-decoration: none;
+}
+
+input {
+    border: none;
+}
+
+.button {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--button-height);
+    padding: 0 var(--button-pad);
+    background-color: var(--button-bg);
+    font-size: var(--text-size-primary);
+    color: var(--button-color);
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    white-space: nowrap;
+    white-space-collapse: collapse;
+    text-wrap-mode: nowrap;
+}
+
+.button[class*='--rounded'] {
+    border-radius: var(--border-radius);
+}
+
+.button[class*='--outline'] {
+    --button-color: var(--color-primary);
+    --button-bg: transparent;
+    border: var(--border-thin) solid var(--button-border-color);
+}
+
+.button[class*='--small'] {
+    min-width: var(--header-height);
+    height: var(--header-height);
+    padding: 0 20px;
+    line-height: var(--header-height);
+}
+
+.header-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: var(--header-height);
+    background: var(--color-grey);
+    border-radius: var(--border-radius);
+    min-width: 500px;
+}
+
+.search-search_input {
+    position: relative;
+    inset: 0;
+    padding-left: 20px;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: var(--text-size-primary);
+    color: var(--color-primary);
+    min-width: 500px;
+    height: var(--header-height);
+}
+
+.header-auth_buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.main-headline {
+    text-align: center;
+    padding: 300px;
+    font-size: 100px;
+}
+
+*:focus {
+    outline: none;
+}
+
+:root {
+    --font: sans-serif;
+    --text-size-small: 12px;
+    --text-size-primary: 16px;
+    --text-size-medium: 18px;
+    --text-size-large: 24px;
+    --color-primary: #222222;
+    --color-primary-rgb: 34, 34, 34;
+    --bg-primary: #e9e9e9;
+    --bg-primary-rgb: 233, 233, 233;
+    --color-white: #fff;
+    --color-white-rgb: 255, 255, 255;
+    --color-orange: #fa5d29;
+    --color-errors: #fa5d29;
+    --color-blue: #49b3fc;
+    --color-grey: #d7d7d7;
+    --header-height: 40px;
+    --border-radius: 7px;
+    --button-bg: #222222;
+    --border-thin: 0.5px;
+    --button-border-color: #222222;
+    --button-color: #fff;
+}

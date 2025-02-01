@@ -1,10 +1,14 @@
 {
     "name": "dictionary",
-    "version": "1.0.0",
+    "version": "0.0.0",
     "description": "Dictionary Website Project",
-    "main": "index.js",
+    "main": "app.js",
+    "type": "module",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "node ./bin/www",
+        "prettier:check": "prettier . --check",
+        "prettier:write": "prettier . --write",
+        "eslint:check": "eslint ."
     },
     "keywords": [
         "website",
@@ -14,5 +18,27 @@
         "dictionary"
     ],
     "author": "Andrii Kravchenko",
-    "license": "ISC"
+    "license": "ISC",
+    "devDependencies": {
+        "@eslint/js": "^9.19.0",
+        "@types/express": "^5.0.0",
+        "eslint": "^9.19.0",
+        "express": "^4.21.2",
+        "globals": "^15.14.0",
+        "prettier": "^3.4.2",
+        "typescript": "^5.7.3",
+        "typescript-eslint": "^8.22.0",
+        "cookie-parser": "~1.4.7",
+        "debug": "~4.4.0",
+        "http-errors": "2.0.0",
+        "morgan": "~1.10.0",
+        "pug": "3.0.3"
+    },
+    "prettier": {
+        "trailingComma": "es5",
+        "tabWidth": 4,
+        "semi": true,
+        "printWidth": 160,
+        "singleQuote": true
+    }
 }
